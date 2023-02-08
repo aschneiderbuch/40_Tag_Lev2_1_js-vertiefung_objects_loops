@@ -90,3 +90,9 @@ alleVeraenderungen.map((i) => {
         console.log(i.preiseGramEuro)
         document.write(" <br> " + i.preiseGramEuro + " == > 50 "  )}
    })
+
+// in Tabelle Name Preis und Veränderungen rein
+   edelMetallPreise.forEach((i) => {
+    document.querySelector("table").innerHTML +=
+    `<tr><td>${i.name}</td><td>${i.preiseGramEuro}</td><td>${i.veraenderung}</td></tr>`
+   })
